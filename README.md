@@ -75,5 +75,104 @@ Follow these steps to run the project locally.
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/your-username/real-time-chat-app.git](https://github.com/your-username/real-time-chat-app.git)
+git clone [https://github.com/Sathwik332004/Real-Time-Chat-Application.git](https://github.com/Sathwik332004/Real-Time-Chat-Application.git)
 cd real-time-chat-app
+```
+
+### 2. Backend Setup
+Navigate to the root directory (or server directory if separated) and install dependencies:
+
+```bash
+npm install
+```
+
+Create a .env file in the root directory and add the following:
+
+Code snippet
+```plaintext
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+NODE_ENV=development
+CLIENT_URL=http://localhost:3000
+
+# Email Configuration (for password reset)
+EMAIL_SERVICE=gmail
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_email_app_password
+
+```
+Start the backend server:
+
+```bash
+npm run server
+```
+
+### 3. Frontend Setup
+Open a new terminal, navigate to the client folder (if applicable), and install dependencies:
+
+```bash
+cd client
+npm install
+```
+
+Create a .env file in the client directory (if using Vite/Create-React-App):
+
+Code snippet
+```plaintext
+VITE_API_URL=http://localhost:5000
+```
+# or REACT_APP_API_URL depending on your build tool
+
+Start the frontend application:
+
+```bash
+npm start
+```
+---
+
+### 🚀 Deployment
+
+This project is deployed using Render.
+
+Backend: Connect your GitHub repo to Render and set the Build Command to npm install and Start Command to node server.js (or your entry file). Add your Environment Variables in the Render dashboard.
+
+Frontend: Deploy as a Static Site or separate Web Service depending on your structure.
+
+---
+
+### 🔮 Future Enhancements
+
+[ ] Group Chat functionality.
+
+[ ] File and image sharing in chats.
+
+[ ] Read receipts (Double ticks).
+
+[ ] Dark/Light mode toggle.
+
+---
+
+### 🤝 Contributing
+Contributions are welcome!
+
+Fork the project.
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+
+Push to the Branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+---
+
+📞 Contact
+If you have any questions, feel free to reach out!
+
+LinkedIn: [LindedIn Profile](https://www.linkedin.com/in/sathwik-bairy-p-n-9ba1152b1)
+Email: [Mail ID](sathwikn67@gmail.com)
+
+
+
